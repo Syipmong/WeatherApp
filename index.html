@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Weather App</title>
+  <!--
+  The Sun PlaceHolder Icon was created by Flaticon
+  <a href="https://www.flaticon.com/free-icons/sun" title="sun icons">Sun Placeholder icon created by Good Ware - Flaticon</a>
+  -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <div class="header">
+    <h1>Weather App</h1>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="city" class="form-label">Country/City:</label>
+      <input type="text" id="city" class="form-control" placeholder="Enter Country,Town or City name" value="Abuja">
+    </div><br />
+    <div class="form-group">
+      <label for="country" class="form-label">Country:</label>
+      <span class="form-control country-data">Country</span>
+    </div>
+    <div class="form-group">
+      <label for="degrees" class="form-label">Temperature:</label>
+      <span class="form-control degrees-data">Temp. Degrees</span>
+    </div>
+    <div class="form-group">
+      <label for="date" class="form-label">Date:</label>
+      <span class="form-control date-data">Date</span>
+    </div>
+    <div class="form-group">
+      <label for="conditions" class="form-label">Conditions:</label>
+      <span class="form-control conditions-data">Conditions</span>
+      <div class="conditions-image">
+  <img src="https://cdn-icons-png.flaticon.com/512/1555/1555542.png" id="conditions-image" alt="Weather conditions">
+</div>
+
+
+    </div><br />
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Get Weather</button>
+    </div>
+  </form>
+  <div class="additional-info">
+    <div class="info-group">
+      <h2 class="info-label">Wind Direction:</h2>
+      <span class="info-data winddir-data">Wind Dir</span>
+    </div>
+    <div class="info-group">
+      <h2 class="info-label">UltraV:</h2>
+      <span class="info-data uv-data">UV</span>
+    </div>
+    <div class="info-group">
+      <h2 class="info-label">Humidity:</h2>
+      <span class="info-data humidity-data">Humidity</span>
+    </div>
+    <div class="info-group">
+      <h2 class="info-label">Pressure:</h2>
+      <span class="info-data pressure-data">Pressure</span>
+    </div>
+  </div>
+  <div class="footer">
+    
+    Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a>
+    <a href="https://www.weatherapi.com/" title="Free Weather API"><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com" border="0"></a><br />
+    
+    <footer>
+        Copyright Yipmong &copy; 2022
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
